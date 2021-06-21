@@ -1,0 +1,20 @@
+class PersonalDetails{
+    constructor(){
+        this.name=createInput('Name');
+        this.age=createInput('Age');
+        this.email=createInput('Email');
+        this.disease=createSelect();
+        this.disease.option("Covid");
+        this.button=createButton('Submit');
+    }
+    display(){
+        this.title=createElement('h1');
+        this.title.html('Covid-19');
+        this.title.position(displayWidth/2,20);
+        this.name.position(displayWidth/3,displayHeight/4);
+        this.age.position(displayWidth/3,displayHeight/4+50);
+        this.email.position(displayWidth/3,displayHeight/4+100);
+        this.disease.position(displayWidth/3,displayHeight/4+150);
+        this.button.position(displayWidth/3,displayHeight/4+200);
+    }
+}
